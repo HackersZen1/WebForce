@@ -1,0 +1,36 @@
+[{
+		"name": "Basic Origin Reflection",
+		"payload": "Origin: https://evil.com",
+		"response": "Access-Control-Allow-Origin: https://evil.com"
+	},
+	{
+		"name": "Trusted null Origin",
+		"payload": "Origin: null",
+		"response": "Access-Control-Allow-Origin: null"
+	},
+	{
+		"name": "Whitelisted null origin value",
+		"payload": "",
+		"response": "Access-Control-Allow-Origin: null"
+	},
+	{
+		"name": "Trusted null Origin",
+		"payload": "Origin: null",
+		"response": "Access-Control-Allow-Origin: null"
+	},
+	{
+		"name": "Trusted subdomain in Origin",
+		"payload": "Origin: evil.example.com",
+		"response": "Access-Control-Allow-Origin: evil.example.com"
+	},
+	{
+		"name": "Abuse on not properly Domain validation",
+		"payload": "Origin: notexample.com",
+		"response": "Access-Control-Allow-Origin: https://notexample.com"
+	},
+	{
+		"name": "Origin domain extension not validated",
+		"payload": "Origin: example.com.evil.com",
+		"response": "Access-Control-Allow-Origin: https://example.com.evil.com"
+	},
+	

