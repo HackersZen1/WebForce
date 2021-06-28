@@ -36,9 +36,8 @@ Choose one of these installation options:
 - Install with git: `git clone https://github.com/pwnsociety/WebForce.git`
 - Install with ZIP file: [Download here](https://github.com/pwnsociety/WebForce/archive/refs/heads/main.zip)
 
-
-How-to-use
-------------
+How to use
+---------------
 
 **All in one:**
 ```
@@ -46,9 +45,6 @@ git clone https://github.com/pwnsociety/WebForce.git
 cd WebForce
 python3 WebForce.py -u "https://website.com/somewhere?id=" --all
 ```
-
-#Scan-Sql-injection
-------------
 
 **Help Command:**
 ```
